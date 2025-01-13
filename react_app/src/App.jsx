@@ -15,6 +15,12 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+
+      <h1>Data</h1>
+      <div>
+        <a href='http://localhost:4000/items'>http://localhost:4000/items</a>
+      </div>
+
       <h1>React App</h1>
     </>
   )

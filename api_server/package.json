@@ -10,7 +10,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "pg": "^8.13.1",
+    "sqlite3": "^5.1.7",
+    "uuid": "^11.0.5",
+    "wait-port": "^1.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"

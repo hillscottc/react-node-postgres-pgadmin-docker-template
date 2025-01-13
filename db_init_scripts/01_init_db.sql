@@ -6,3 +6,11 @@ CREATE TABLE IF NOT EXISTS public."User" (
     last_name CHARACTER VARYING(120),
     CONSTRAINT "User_pkey" PRIMARY KEY (id)
 );
+
+CREATE TABLE IF NOT EXISTS public.todo_items
+(
+    id character varying(36) COLLATE pg_catalog."default",
+    name character varying(255) COLLATE pg_catalog."default",
+    completed boolean
+);
+

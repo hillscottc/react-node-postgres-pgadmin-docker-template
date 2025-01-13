@@ -19,6 +19,7 @@ This project provides a starter template for a full stack web application using 
 | pgAdmin            | `http://localhost:5050`             |
 | React App          | `http://localhost:3000`             |
 | Express API Server | `http://localhost:4000/health`      |
+|         JSON Data  | `http://localhost:4000/items`       |
 
 ## Usage
 
