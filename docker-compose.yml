@@ -1,6 +1,5 @@
-version: "3"
 services:
-  
+
   db:
     image: postgres:16.4-alpine
     container_name: postgres_container
@@ -21,11 +20,11 @@ services:
     networks:
       - app_network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER}" ]
       interval: 120s
       timeout: 5s
       retries: 3
-  
+
   pgadmin:
     image: dpage/pgadmin4:8.11.0
     env_file:
@@ -79,11 +78,11 @@ services:
     networks:
       - app_network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:${API_SERVER_PORT}/health"]
+      test: [ "CMD", "curl", "-f", "http://localhost:${API_SERVER_PORT}/health" ]
       interval: 120s
       timeout: 5s
       retries: 3
-  
+
   react_app:
     environment:
       - REACT_APP_PORT=${REACT_APP_PORT}
@@ -104,7 +103,6 @@ services:
       - api_server
     networks:
       - app_network
-
 
 networks:
   app_network:
